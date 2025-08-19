@@ -1,0 +1,316 @@
+<html><head>
+<title>Reema's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-color:#1A1C19;
+            font-family:tahoma;
+            color:lightpink;
+          
+        }
+        
+        .topnav {
+        position:relative;
+        overflow: hidden;
+        width:100%;
+        height:55px;
+        text-align: center;
+        }
+
+        .topnav a {
+        float: left;
+        display: block;
+        color: lightpink;
+        text-align: center;
+        padding: 15px 16px;
+        text-decoration: none;
+        font-size:13pt;
+        font-family:verdana;
+        }
+
+        .topnav a:hover {
+        border: 1px solid #EDEEB5;
+        border-bottom: 1px solid orange;
+        color: lightpink;
+        }
+        
+        #sa{
+            float: right;
+            padding: 8px 16px;
+            
+        }
+       
+       .prev, .next {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         margin-top: -22px;
+         padding: 10px ;
+         background-color:#E0996E;
+         color: white;
+         font-weight: bold;
+         font-size: 18px;
+         border-radius: 0 3px 3px 0;
+       }
+       .next {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+       }
+        .prev:hover, .next:hover {
+          background-color: ;
+        }
+        
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .dot:hover {
+          background-color: #E0996E;
+        }
+        
+        #w{
+            font-size:30;
+            color:lightpink;
+            font-family: Georgia, serif;
+
+           width:200;
+            height:30;
+            text-align:center;
+            
+        }
+
+        #q{
+           
+           color:white;
+           width:20;
+            height:10;
+            
+        }
+        .y{
+            font-size:12pt;
+            color:white;
+            cursor:pointer;
+            text-decoration:none;
+            text-align:center;
+            font-family: Verdana, sans-serif;
+            
+        }
+        .ff:hover{
+            border:1px solid lightpink;
+            
+        }
+        .ff{
+            border:solid 1px orange;
+        }
+        
+        button {
+          padding: 6px 62px;
+          border: 0.5px solid white;
+          background-color:#E0996E;
+          font-weight:bold;
+          font-size:8pt;
+        }
+        
+        .t{
+            font-size:10pt;
+        }
+
+        .quantity{
+            padding: 6px 4px;
+            border: 0.5px solid white;
+            background-color:white;
+        }
+        
+        .l:hover{
+            background-color:#ddd;
+            cursor:pointer;
+        }
+        
+        #me{
+            font-size:20pt;
+            overflow: hidden;
+            position:relative;
+            color:white;
+        }
+        
+        #me::after{
+            content:"Reema Jamjoom";
+            display:relative;
+            animation: animation 8s steps(9)infinite;
+            width:400;
+            color:orange;
+        }
+        
+        @-webkit-keyframes animation{
+            25%{
+                content:"Reema Jamjoom";
+                width:0ch;
+                color:lightpink;
+            }
+            40%{
+                content:"a UI Designer";
+                width:0ch;
+                color:lightblue;
+            }
+            75%{
+                content:"a Web/App Developer";
+                width:0ch;
+                color:orange;
+            }
+            95%{
+                content:"a Computer Scientist";
+                width:0ch;
+                color:pink;
+            }
+        }
+        
+        #g{
+            object-fit:contain;
+        }
+        
+        .lu{
+            color:white;
+            text-align:center;
+        }
+        
+        #we{
+            color:#EDEEB5;
+            font-size:12pt;
+        }
+        
+        .icons {
+        display: flex;
+        column-gap: 50px;
+        }
+        .icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        outline: 2px solid #fff;
+        transition-property:
+        outline-offset, outline-color, background-color;
+        transition-duration: 0.25s;
+        }
+        .icon:hover {
+        outline-offset: 4px;
+        background-color:orange;
+        }
+        
+        .icon: hover i {
+        animation: shake 0.25s;
+        }
+        
+        .aa{
+            border:1px dashed #EDEEB5;
+            text-align:center;
+            color:lightpink;
+            
+        }
+        
+
+</style>
+</head>
+
+<body>
+   
+   <div class="topnav">
+   <a href="index.html">ABOUT ME</a>
+   <a href="Portfolio-projects.html">PROJECTS</a>
+   <a href="https://www.figma.com/proto/E1zfTJ5XvjOiSbtLAmhp6t/Portfolio---Reema-Jamjoom?node-id=1-15&starting-point-node-id=1:15">CASE STUDIES</a>
+   <a href="https://drive.google.com/file/d/1og9VHhC4FK0CHiAnLvD6I-oEUBIZ9i64/view?usp=sharing" target=“_blank”>CV/RESUME</a>
+   <a href="index.html" id="sa"><img src="rj-logo.png" width="50" height="30"></img></a>
+</div>
+    
+    <br>
+    <p class="icons"><center>
+    <a href="mailto:reema.jamjoom@gmail.com"><i class="icon"><img src="email-logo.png" height="38" width="38"></img></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="+966562595701"><i class="icon"><img src="phone-logo.png"></img></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="http://www.linkedin.com/in/reema-jamjoom" target=“_blank”><i class="icon"><img src="linkedin-logo.png" height="37" width="37"></img></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.instagram.com/codebyreema/" target=“_blank”><i class="icon"><img src="instagram-logo.png" ></img></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/reemajamjoom" target=“_blank”><i class="icon"><img src="github-logo.png"></img></i></a>
+    </center>
+</p>
+    <br>
+   
+    <table id="q" align="center">
+       <center> <p id="w">MY WORK</p></center>
+  <p class="aa">APPS</p>
+            <tr>
+    <td class="y"><a href="https://github.com/reemajamjoom/Eyela-App"><img src="eyela.png" class="ff" width="180" height="300"></img></a>
+        <td><td>
+    <td class="y"><a href="https://github.com/reemajamjoom/Writing-App"><img src="writing.png" class="ff" width="180" height="300"></img></a>
+        <td><td>
+    
+        </tr>
+        
+        <tr>
+            <td class="y">EYELA <br> (AI Object/Text/Fridge Detection and Recipe Finder)<br></td>
+            <td><td>
+            <td class="y">WRITING/BOOKS<br></td>
+            <td><td>
+            
+        </tr>
+        
+     </table>
+    
+    <br><br>
+    
+    
+    <table id="q" align="center">
+        <p class="aa">WEBSITES</p>
+        <tr>
+    <td class="y"><a href="https://reemajamjoom.github.io/Bakery-Website/"><img id="i" src="bakery.png" class="ff" width="370" height="220"></img></a>
+        <td><td>
+    <td class="y"><a href="https://reemajamjoom.github.io/Unfoundstore-Website/"><img src="unfound.png" class="ff" width="370" height="220"></img></a>
+        <td><td>
+    <td class="y"><a href="https://reemajamjoom.github.io/Matcha-Website/"><img src="matcha.png" width="370" class="ff" height="220"></img></a>
+    
+            
+                </tr>
+        <tr>
+            <td class="y">BAKERY<br></td>
+            <td><td>
+            <td class="y">UNFOUND STORE<br></td>
+            <td><td>
+            <td class="y">MATCHA<br></td>
+        </tr>
+        
+    </table>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#w').hover(function(){
+                var pe=$(this);
+                pe.css("border-top","1px solid orange");
+                pe.css("border-left","1px solid orange");
+                pe.css("border-right","1px solid orange");
+            })})
+
+        $(document).ready(function(){
+            $('.aa').mouseenter(function(){
+                $('#w').slideToggle();
+            })})
+        
+    
+  
+    </script>
+
+    
+    
+    <br><br>
+    <center><br>REEMA JAMJOOM</center>
+   
+        
+</body>
+</html>
