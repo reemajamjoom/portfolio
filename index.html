@@ -1,363 +1,320 @@
-<html><head>
+<html>
+<head>
 <title>Reema's Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body{
-            background-color:#1A1C19;
-            font-family:tahoma;
-            color:#FFD6D7;
-          
-        }
-        
-        .topnav {
-        position:relative;
-        overflow: hidden;
-        width:100%;
-        height:55px;
-        text-align: center;
-        }
+<meta name="viewport" content="width=1200">
+<style>
+body {
+    background-color: #1A1C19;
+    font-family: tahoma;
+    color: #FFD6D7;
+    overflow-x: auto;
+    margin: 0;
+    padding: 0;
+}
 
-        .topnav a {
-        float: left;
-        display: block;
-        color: #FFD6D7;
-        text-align: center;
-        padding: 15px 16px;
-        text-decoration: none;
-        font-size:13pt;
-        font-family:tahoma;
-        }
+.topnav {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+}
 
-        .topnav a:hover {
-        border: 1px solid #EDEEB5;
-        border-bottom: 1px solid orange;
-        color: lightpink;
-        }
-        
-        #sa{
-            float: right;
-            padding: 8px 16px;
-            
-        }
-       
-       .prev, .next {
-         cursor: pointer;
-         position: absolute;
-         top: 50%;
-         width: auto;
-         margin-top: -22px;
-         padding: 10px ;
-         background-color:#E0996E;
-         color: white;
-         font-weight: bold;
-         font-size: 18px;
-         border-radius: 0 3px 3px 0;
-       }
-       .next {
-         right: 0;
-         border-radius: 3px 0 0 3px;
-       }
-        .prev:hover, .next:hover {
-          background-color: ;
-        }
-        
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
+.topnav a {
+    float: left;
+    display: block;
+    color: #FFD6D7;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 13pt;
+    font-family: tahoma;
+}
 
-        .dot:hover {
-          background-color: #E0996E;
-        }
-        
-        .w{
-            font-size:30;
-            color:#FFD6D7;
-            width:300;
-            height:30;
-            text-align:left;
-            padding-left:250;
-            font-family: Georgia, serif;
-            
-        }
+.topnav a:hover {
+    border: 1px solid #EDEEB5;
+    border-bottom: 1px solid orange;
+    color: lightpink;
+}
 
-        #q{
-           color:orange;
-           width:20;
-           height:10;
-            
-        }
-        .y{
-            font-size:12pt;
-            color:white;
-            text-decoration:none;
-            text-align:center;
-            
-        }
-        #y:hover{
-            color:#E0996E;
-        }
-        
-        button {
-          padding: 6px 62px;
-          border: 0.5px solid white;
-          background-color:#E0996E;
-          font-weight:bold;
-          font-size:8pt;
-        }
-        
-        .t{
-            font-size:10pt;
-        }
+#sa {
+    float: right;
+    padding: 8px 16px;
+}
 
-        .quantity{
-            padding: 6px 4px;
-            border: 0.5px solid white;
-            background-color:white;
-        }
-        
-        .l:hover{
-            background-color:#ddd;
-            cursor:pointer;
-        }
-        
-        #me{
-            font-size:20pt;
-            overflow: hidden;
-            position:relative;
-            color:white;
-        }
-        
-        #me::after{
-            content:"Reema Jamjoom";
-            display:relative;
-            animation: animation 8s steps(9)infinite;
-            width:400;
-            color:pink;
-        }
-        
-        @-webkit-keyframes animation{
-            25%{
-                content:"Reema Jamjoom";
-                width:0ch;
-                color:lightpink;
-            }
-            40%{
-                content:"a Software Engineer";
-                width:0ch;
-                color:lightblue;
-            }
-            75%{
-                content:"a Web/App Developer";
-                width:0ch;
-                color:darkorange;
-            }
-            90%{
-                content:"a Full Stack Developer";
-                width:0ch;
-                color:pink;
-            }
-        }
-        
-        #g{
-            object-fit:contain;
-        }
-        
-        .lu{
-            color:white;
-            text-align:center;
-        }
-        
-        #we{
-            color:#EDEEB5;
-            font-size:12pt;
-        }
-        
-        #web{
-            color:#EDEEB5;
-            font-size:18pt;
-            text-align:left;
-            padding-left:500;
-        }
-        #web a{
-            color:orange;
-        }
-        .icons {
-        display: flex;
-        column-gap: 50px;
-        }
-        .icon {
-        display: inline-flex;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        outline: 2px solid #fff;
-        transition-property:
-        outline-offset, outline-color, background-color;
-        transition-duration: 0.25s;
-        }
-        .icon:hover {
-        outline-offset: 4px;
-        background-color:orange;
-        }
-        
-        .icon: hover i {
-        animation: shake 0.25s;
-        }
-        
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    background-color: #E0996E;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+}
 
-        .dot:hover {
-          background-color: orange;
-        }
-        
-        #heart{
-          
-                bottom:50px;
-                left:100px;
-                height:130px;
-                width:150px;
-               
-            
-        }
-    
-        
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 
+.prev:hover, .next:hover {
+    background-color: ;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #E0996E;
+}
+
+.w {
+    font-size: 30;
+    color: #FFD6D7;
+    width: 300;
+    height: 30;
+    text-align: left;
+    padding-left: 250;
+    font-family: Georgia, serif;
+}
+
+#q {
+    color: orange;
+    width: 20;
+    height: 10;
+}
+
+.y {
+    font-size: 12pt;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#y:hover {
+    color: #E0996E;
+}
+
+button {
+    padding: 6px 62px;
+    border: 0.5px solid white;
+    background-color: #E0996E;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.t {
+    font-size: 10pt;
+}
+
+.quantity {
+    padding: 6px 4px;
+    border: 0.5px solid white;
+    background-color: white;
+}
+
+.l:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#me {
+    font-size: 20pt;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+#me::after {
+    content: "Reema Jamjoom";
+    display: relative;
+    animation: animation 8s steps(9) infinite;
+    width: 400;
+    color: pink;
+}
+
+@-webkit-keyframes animation {
+    25% { content: "Reema Jamjoom"; width: 0ch; color: lightpink; }
+    40% { content: "a Software Engineer"; width: 0ch; color: lightblue; }
+    75% { content: "a Web/App Developer"; width: 0ch; color: darkorange; }
+    90% { content: "a Full Stack Developer"; width: 0ch; color: pink; }
+}
+
+#g {
+    object-fit: contain;
+}
+
+.lu {
+    color: white;
+    text-align: center;
+}
+
+#we {
+    color: #EDEEB5;
+    font-size: 12pt;
+}
+
+#web {
+    color: #EDEEB5;
+    font-size: 18pt;
+    text-align: left;
+    padding-left: 500;
+}
+
+#web a {
+    color: orange;
+}
+
+.icons {
+    display: flex;
+    column-gap: 50px;
+}
+
+.icon {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+}
+
+.icon:hover {
+    outline-offset: 4px;
+    background-color: orange;
+}
+
+.icon: hover i {
+    animation: shake 0.25s;
+}
+
+#heart {
+    bottom: 50px;
+    left: 100px;
+    height: 130px;
+    width: 150px;
+}
 </style>
 </head>
 
 <body>
-   
-    <div class="topnav">
-    <a href="#i">ABOUT ME</a>
-    <a href="Portfolio-projects.html">PROJECTS</a>
-    <a href="https://www.figma.com/proto/E1zfTJ5XvjOiSbtLAmhp6t/Portfolio---Reema-Jamjoom?node-id=1-15&starting-point-node-id=1:15">CASE STUDIES</a>
-    <a href="https://drive.google.com/file/d/1og9VHhC4FK0CHiAnLvD6I-oEUBIZ9i64/view?usp=sharing" target=“_blank”>CV/RESUME</a>
-    <a href="index.html" id="sa"><img src="rj-logo.png" width="50" height="30"></img></a>
+<div class="topnav">
+<a href="#i">ABOUT ME</a>
+<a href="Portfolio-projects.html">PROJECTS</a>
+<a href="https://www.figma.com/proto/E1zfTJ5XvjOiSbtLAmhp6t/Portfolio---Reema-Jamjoom?node-id=1-15&starting-point-node-id=1:15">CASE STUDIES</a>
+<a href="https://drive.google.com/file/d/1og9VHhC4FK0CHiAnLvD6I-oEUBIZ9i64/view?usp=sharing" target="_blank">CV/RESUME</a>
+<a href="index.html" id="sa"><img src="rj-logo.png" width="50" height="30"></a>
 </div>
- 
-    <br>
-    <p class="icons"><center>
-    <a href="mailto:reema.jamjoom@gmail.com"><i class="icon"><img src="email-logo.png" height="38" width="38"></img></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="+966562595701"><i class="icon"><img src="phone-logo.png"></img></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="http://www.linkedin.com/in/reema-jamjoom" target=“_blank”><i class="icon"><img src="linkedin-logo.png" height="37" width="37"></img></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.instagram.com/codebyreema/" target=“_blank”><i class="icon"><img src="instagram-logo.png" ></img></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/reemajamjoom" target=“_blank”><i class="icon"><img src="github-logo.png"></img></i></a>
-    </center>
-</p>
-    <br><br>
-    
-    <table id="q" align="center">
-        <tr>
-            <td><img src="avatar.png" height="220" width="270" id="g"></img></td>
-            
-            <td><p id="me" width="400">Hii! I'm </p>   <img src="heart.png" id="heart"></img></td>
-        </tr>
-    </table>
-    
-    
-    
-    <br>
-    <table id="q" align="center">
-    <tr>
-        <td><p class="lu">Programming Languages:
-        <ul type="circle" id="we">
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Swift</li>
-            <li>Java</li>
-        </ul></p></td>
-        <td style="border-right:1px solid orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td><p class="lu">Skills:
-            <ul type="circle" id="we">
-                <li>Emotional Intelligence</li>
-                <li>Teamwork</li>
-                <li>Artificial Intelligence</li>
-                <li>Project Management</li>
-                
-                </ul></p></td>
-            <td><br><ul type="circle" id="we">
-                <li>Critical Thinking</li>
-                <li>Leadership</li>
-                <li>Web Development</li>
-                <li>IOS App Development</li>
-                
-            </ul></td>
-            <td><br><ul type="circle" id="we">
-                <li>UI/UX Design and Research</li>
-                <li>Social Media Marketing</li>
-            </ul></td>
-    </tr>
-    </table>
-    <br><br>
-    <p class="w">MY PROGRAMMING PROJECTS:</p>
-    <br>
-    <center>
-        <ul type="circle" id="web">
-          <li>
-             Bakery Website<br>
-            <a href="https://reemajamjoom.github.io/Bakery-Website/">Live Demo</a> |
-            <a href="https://github.com/reemajamjoom/Bakery-Website">Code</a>
-          </li>
-          <li>
-            Eyela App (AI Object/Text/Fridge Detection and Recipe Finder)<br>
-            <a href="https://github.com/reemajamjoom/Eyela-App">Code</a>
-          </li>
-          <li>
-            Writing App<br>
-            <a href="https://github.com/reemajamjoom/Writing-App">Code</a>
-          </li>
-          <li>
-            Unfound Store Website (Clothing brand)<br>
-            <a href="https://reemajamjoom.github.io/Unfoundstore-Website/">Live Demo</a> |
-            <a href="https://github.com/reemajamjoom/Unfoundstore-Website">Code</a>
-          </li>
-           <li>
-            Matcha Website<br>
-            <a href="https://reemajamjoom.github.io/Matcha-Website/">Live Demo</a> |
-            <a href="https://github.com/reemajamjoom/Matcha-Website">Code</a>
-          </li>
-        </ul>
-        
-        <br><br>
- </center>
-        <p class="w">ABOUT ME:</p>
-  
-  <center><img src="about1.png" id="i" width="610" height="330"></img></center><br>
-  <div style="text-align:center">
-     <span class="dot" onclick="document.getElementById('i').src='about1.png'"></span>
-     <span class="dot" onclick="document.getElementById('i').src='about6.png'"></span>
-     <span class="dot" onclick="document.getElementById('i').src='about3.png'"></span>
-   </div>
-  
 
- 
- 
- <br><br>
- <center><br>REEMA JAMJOOM</center>
-   
+<br>
 
+<p class="icons"><center>
+<a href="mailto:reema.jamjoom@gmail.com"><i class="icon"><img src="email-logo.png" height="38" width="38"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="+966562595701"><i class="icon"><img src="phone-logo.png"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.linkedin.com/in/reema-jamjoom" target="_blank"><i class="icon"><img src="linkedin-logo.png" height="37" width="37"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/codebyreema/" target="_blank"><i class="icon"><img src="instagram-logo.png"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/reemajamjoom" target="_blank"><i class="icon"><img src="github-logo.png"></i></a>
+</center></p>
 
-    
-    
-   
-        
+<br><br>
+
+<table id="q" align="center">
+<tr>
+<td><img src="avatar.png" height="220" width="270" id="g"></td>
+<td>
+<p id="me" width="400">Hii! I'm </p>
+<img src="heart.png" id="heart">
+</td>
+</tr>
+</table>
+
+<br>
+
+<table id="q" align="center">
+<tr>
+<td>
+<p class="lu">Programming Languages:
+<ul type="circle" id="we">
+<li>Python</li>
+<li>JavaScript</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Swift</li>
+<li>Java</li>
+</ul></p>
+</td>
+<td style="border-right:1px solid orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<p class="lu">Skills:
+<ul type="circle" id="we">
+<li>Emotional Intelligence</li>
+<li>Teamwork</li>
+<li>Artificial Intelligence</li>
+<li>Project Management</li>
+</ul></p>
+</td>
+<td>
+<br>
+<ul type="circle" id="we">
+<li>Critical Thinking</li>
+<li>Leadership</li>
+<li>Web Development</li>
+<li>IOS App Development</li>
+</ul>
+</td>
+<td>
+<br>
+<ul type="circle" id="we">
+<li>UI/UX Design and Research</li>
+<li>Social Media Marketing</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<p class="w">MY PROGRAMMING PROJECTS:</p>
+<br>
+<center>
+<ul type="circle" id="web">
+<li>Bakery Website<br>
+<a href="https://reemajamjoom.github.io/Bakery-Website/">Live Demo</a> | <a href="https://github.com/reemajamjoom/Bakery-Website">Code</a></li>
+<li>Eyela App (AI Object/Text/Fridge Detection and Recipe Finder)<br>
+<a href="https://github.com/reemajamjoom/Eyela-App">Code</a></li>
+<li>Writing App<br>
+<a href="https://github.com/reemajamjoom/Writing-App">Code</a></li>
+<li>Unfound Store Website (Clothing brand)<br>
+<a href="https://reemajamjoom.github.io/Unfoundstore-Website/">Live Demo</a> | <a href="https://github.com/reemajamjoom/Unfoundstore-Website">Code</a></li>
+<li>Matcha Website<br>
+<a href="https://reemajamjoom.github.io/Matcha-Website/">Live Demo</a> | <a href="https://github.com/reemajamjoom/Matcha-Website">Code</a></li>
+</ul>
+<br><br>
+</center>
+
+<p class="w">ABOUT ME:</p>
+<center><img src="about1.png" id="i" width="610" height="330"></center>
+<br>
+<div style="text-align:center">
+<span class="dot" onclick="document.getElementById('i').src='about1.png'"></span>
+<span class="dot" onclick="document.getElementById('i').src='about6.png'"></span>
+<span class="dot" onclick="document.getElementById('i').src='about3.png'"></span>
+</div>
+
+<br><br>
+<center><br>REEMA JAMJOOM</center>
 </body>
 </html>
